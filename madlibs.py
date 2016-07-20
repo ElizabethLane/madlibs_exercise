@@ -43,7 +43,7 @@ def show_madlib_form():
     """Initiates the game."""
 
     user_response = request.args.get("yes-no")
-    if user_response == 'No':
+    if user_response == 'no':
         return render_template("goodbye.html")
     else:
         return render_template("game.html")
